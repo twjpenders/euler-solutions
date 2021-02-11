@@ -14,6 +14,21 @@ int is_prime(long long int number)
 
 int main(int argc, char *argv[])
 {
+	long long int number = 600851475143;
+	long long int divisor = 2;
 	
-	return 0;
+	while (number != divisor) {
+        if (is_prime(divisor)) {
+            if (number % divisor == 0) {
+                number = number / divisor;
+            } else {
+                divisor += 1;
+            }
+        } else {
+            divisor += 1;
+        }
+    }
+    
+    printf("%llu\n", number);
+    return 0;
 }
