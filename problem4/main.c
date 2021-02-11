@@ -5,9 +5,18 @@
 
 #include <stdio.h>
 
+#define PALINDROME 1
+#define NOTPALINDROME 0
+
+int reverse_int(int number)
+{
+
+}
+
 int is_palindrome(int number)
 {
-	return 0;
+	if (number == reverse_int(number)) return PALINDROME;
+	else return NOTPALINDROME;
 }
 
 int main(int argc, char *argv[])
