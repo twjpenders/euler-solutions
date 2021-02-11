@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -g -Wall
 
-TARGET = problem3
+TARGET = problem4
 SOURCES = main
 
 all: $(TARGET)
