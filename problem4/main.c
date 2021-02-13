@@ -8,9 +8,17 @@
 #define PALINDROME 1
 #define NOTPALINDROME 0
 
-int reverse_int(int number)
+int reverse_int(int input)
 {
+        int output = 0;
+        int remainder = 0;
 
+        while (input != 0) {
+                remainder = input % 10;
+                output = output * 10 + remainder;
+                input = input / 10;
+        }
+        return output;
 }
 
 int is_palindrome(int number)
