@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -g -Wall
 LDFLAGS = -lm
 
-TARGET = problem4
+TARGET = problem7
 SOURCES = main
 
 all: $(TARGET)
