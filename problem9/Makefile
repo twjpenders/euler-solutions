@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -g -Wall
 
-TARGET = problem6
+TARGET = problem9
 SOURCES = main
 LDFLAGS = -lm
 
